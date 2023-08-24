@@ -1,3 +1,5 @@
+const GUN = require("gun")
+
 const express = require('express')
 
 const app = express()
