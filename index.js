@@ -33,7 +33,7 @@ const express = require('express')
 const app = express()
 
 const server = require('http').createServer().listen(8080);
-const gun = GUN({web: server});
+const gun = GUN({web: server, s3 : true});
 
 app.all('/', (req, res) => {
     
