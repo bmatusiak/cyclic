@@ -16,7 +16,8 @@ const GUN = (function () {
     require('gun/lib/store');
     // require('gun/lib/rfs');
     // require('gun/src/localStorage');
-    require('./gunMods/rs3');
+    // require('./gunMods/rs3');
+    require('gun/lib/rs3');
     require('gun/lib/wire');
 
     try { require('gun/sea'); } catch (e) { }
