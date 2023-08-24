@@ -2,6 +2,7 @@
 const GUN = (function () {
     require('gun/lib/yson');
     var Gun = require('gun/gun'), u;
+    global.GUN = Gun;    
     Gun.serve = require('gun/lib/serve');
     //process.env.GUN_ENV = process.env.GUN_ENV || 'debug';
     //console.LOG = {}; // only do this for dev.
@@ -15,7 +16,7 @@ const GUN = (function () {
     require('gun/lib/store');
     // require('gun/lib/rfs');
     // require('gun/src/localStorage');
-    require('gun/lib/rs3');
+    require('./gunMods/rs3');
     require('gun/lib/wire');
 
     try { require('gun/sea'); } catch (e) { }
