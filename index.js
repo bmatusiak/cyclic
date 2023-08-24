@@ -36,7 +36,9 @@ const app = express()
 const server = require('http').createServer().listen(8080);
 const { env } = process;
 const gun = GUN({
-    web: server, s3: {
+    web: server, 
+    rfs: false,
+    s3: {
         key: env.AWS_ACCESS_KEY_ID, // AWS Access Key
         secret: env.AWS_SECRET_ACCESS_KEY, // AWS Secret Token
         bucket: env.AWS_S3_BUCKET // The bucket you want to save into
