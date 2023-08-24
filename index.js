@@ -14,7 +14,7 @@ const GUN = (function(){
 	//require('../nts');
 	require('gun/lib/store');
 	// require('gun/lib/rfs');
-	require('gun/src/localStorage');
+	// require('gun/src/localStorage');
 	require('gun/lib/rs3');
 	require('gun/lib/wire');
 
